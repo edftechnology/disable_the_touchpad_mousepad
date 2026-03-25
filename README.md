@@ -20,15 +20,28 @@ O touchpad, também conhecido como mousepad, é um dispositivo de entrada comum 
 
 Para configurar/instalar/usar o `desabilitar o touchpad/mousepad` no `Linux Ubuntu`, você pode seguir estes passos:
 
-1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`    
+1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
+
+    ```bash
+    Ctrl + Alt + T
+    ```    
 
 2. Certifique-se de que seu sistema esteja limpo e atualizado.
 
-    2.1 Limpar o `cache` do gerenciador de pacotes APT. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo APT e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
+    2.1 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando:
+    ```bash
+    sudo apt clean
+    ```
     
-    2.2 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
+    2.2 Remover pacotes `.deb` antigos ou duplicados do `cache` local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando:
+    ```bash
+    sudo apt autoclean
+    ```
 
-    2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
+    2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando:
+    ```bash
+    sudo apt autoremove -y
+    ```
 
     2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: `sudo apt update -y`
 
@@ -40,37 +53,45 @@ Para configurar/instalar/usar o `desabilitar o touchpad/mousepad` no `Linux Ubun
 
     2.8 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
 
-Para desabilitar o touchpad (ou mouse pad) no Ubuntu Linux, você pode utilizar várias abordagens, dependendo de suas preferências e da versão do Ubuntu que está usando. Vou te mostrar dois métodos comuns: um usando a interface gráfica e outro pelo terminal.
+Para desabilitar o `touchpad` (ou `mouse pad`) no `Linux Ubuntu`, você pode utilizar várias abordagens, dependendo de suas preferências e da versão do `Ubuntu` que está usando. Vou te mostrar dois métodos comuns: um usando a interface gráfica e outro pelo terminal.
 
-### 1.1 **Usando a interface gráfica**
+### 1.1 Usando a interface gráfica
 
-    1. **Configurações do Sistema:** Vá até as configurações do sistema clicando no ícone do sistema ou procurando por `"Configurações"` no menu de aplicações.
-    
-    2. **Dispositivos / Mouse e Touchpad:** Procure pela seção `"Dispositivos"`, `"Mouse` e `Touchpad`" ou similar, dependendo da versão do `Ubuntu`.
-    
-    3. **Desativar Touchpad:** Você deve encontrar uma opção para desabilitar o touchpad. Esta opção pode ser um interruptor ou caixa de seleção que diz `"Desativar touchpad"` ou `"Desativar quando o mouse USB está conectado"`.
+Para desabiliyat o `touchpad` (ou `mouse pad`) usando a interface gráfica, siga o passo a passo abaixo:
 
-### 1.2 Usando o Terminal
+1. **Configurações do Sistema:** Vá até as configurações do sistema clicando no ícone do sistema ou procurando por `"Settings Manager"` no menu de aplicações.
+
+2. **Dispositivos / Mouse e Touchpad:** Procure pela seção `"Hardware"`, `"Mouse and Touchpad`" ou similar, dependendo da versão do `Ubuntu`.
+
+3. **Desativar Touchpad:** Você deve encontrar uma opção para desabilitar o `touchpad`. Esta opção pode ser um interruptor ou caixa de seleção que diz `"Disable touchpad"` ou `"Disable touchpad while typing"`.
+
+
+### 1.2 Usando o `Terminal Emulator`
 
 Para uma abordagem mais direta e que funciona independentemente da interface gráfica que você está usando, você pode desabilitar o touchpad através do terminal.
 
-    1. **Identificar o Dispositivo:** Primeiro, você precisa identificar o seu touchpad. Abra o terminal e digite: `xinput list`
+1. **Identificar o Dispositivo:** Primeiro, você precisa identificar o seu touchpad. Abra o terminal e digite: `xinput list`
 
-    2. **Encontrar o Touchpad:** Procure na lista um dispositivo que parece ser o seu touchpad. Geralmente é identificado como "Touchpad" ou algo similar.
+2. **Encontrar o Touchpad:** Procure na lista um dispositivo que parece ser o seu touchpad. Geralmente é identificado como "Touchpad" ou algo similar.
 
-    3. **Desabilitar o Touchpad:** Depois de identificar o nome ou ID do seu touchpad, use o seguinte comando para desabilitá-lo, substituindo ID pelo número do ID do seu touchpad: `xinput --disable ID`
+3. **Desabilitar o Touchpad:** Depois de identificar o nome ou ID do seu touchpad, use o seguinte comando para desabilitá-lo, substituindo ID pelo número do ID do seu touchpad: `xinput --disable ID`
 
-        Por exemplo, se o ID do seu touchpad for `12`, o comando será: `xinput --disable 12`
+    Por exemplo, se o ID do seu touchpad for `12`, o comando será: `xinput --disable 12`
 
 **Nota:** Para reativar o touchpad, você pode usar o comando `xinput --enable ID`, substituindo ID pelo número do ID do seu touchpad.
 
 Esses métodos devem ajudar você a evitar acidentalmente tocar no touchpad enquanto usa um mouse externo.
 
+
 ### 1.2 Código completo para configurar/instalar
 
 Para configurar/instalar/usar o `desabilitar o touchpad/mousepad` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
 
-1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
+1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
+
+    ```bash
+    Ctrl + Alt + T
+    ```
 
 2. Digite o seguinte comando e pressione `Enter`:
 
