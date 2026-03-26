@@ -195,6 +195,9 @@ Para configurar/instalar/usar o `desabilitar o touchpad/mousepad` no `Linux Ubun
 
     ```bash
     # --- Desativar/Ativar o touchpad/mousepad ---
+    alias mousepad_off='xinput disable "DLL07B0:01 044E:120B"'
+    alias mousepad_on='xinput enable "DLL07B0:01 044E:120B"'
+
     alias touchpad_off='xinput disable "DLL07B0:01 044E:120B"'
     alias touchpad_on='xinput enable "DLL07B0:01 044E:120B"'
     ```
