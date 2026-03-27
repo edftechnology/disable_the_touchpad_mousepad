@@ -72,7 +72,9 @@ Para desabilitar o `touchpad` (ou `mousepad`) no `Linux Ubuntu`, você pode util
 
 ### 1.1 Usando a interface gráfica
 
-[!image]
+<p align="center">
+  <img src="docs/figures/touchpad_mousepad.png" alt="Janela Mouse and Touchpad com o touchpad selecionado">
+</p>
 
 Para desabilitar o `touchpad` (ou `mousepad`) usando a _interface_ gráfica, siga o passo a passo abaixo:
 
@@ -211,4 +213,3 @@ Para configurar/instalar/usar o `desabilitar o touchpad/mousepad` no `Linux Ubun
 [1] OPENAI. **Instalar o `desabilitar o touchpad/mousepad` no `linux ubuntu` pelo `terminal emulator`.*** Disponível em: <https://chatgpt.com/c/69c47376-e424-83e9-a3a8-bb5d07073e02> (texto adaptado). ChatGPT. Acessado em: 25/02/2024 12:00.
 
 [2] OPENAI. **Vs code: editor popular.** Disponível em: <https://chat.openai.com/c/b640a25d-f8e3-4922-8a3b-ed74a2657e42> (texto adaptado). ChatGPT. Acessado em: 25/02/2024 12:00.
-
