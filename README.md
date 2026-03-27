@@ -72,6 +72,8 @@ Para desabilitar o `touchpad` (ou `mousepad`) no `Linux Ubuntu`, você pode util
 
 ### 1.1 Usando a interface gráfica
 
+[!image]
+
 Para desabilitar o `touchpad` (ou `mousepad`) usando a _interface_ gráfica, siga o passo a passo abaixo:
 
 1. **Configurações do Sistema:** Vá até as configurações do sistema clicando no ícone do sistema ou procurando por `"Settings Manager"` no menu de aplicações.
